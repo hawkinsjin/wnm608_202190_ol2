@@ -1,0 +1,113 @@
+:root{
+	--color-offwhite:#f4f4f4;
+	--color-black:rgb(8,1,1);
+}
+body{
+	background-color: var(--color-black);
+}
+.view-window{
+	height: 70vh;
+	position: relative;
+	overflow:hidden;
+	width:100vw;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.keyview{
+    height:100vh;
+    position: relative;
+    overflow:hidden;
+    background-size:cover;
+    background-position: center;
+}
+.button1{
+	width:14em;
+	height: 2em;
+	border-radius: 5em;
+	border-style: none;
+	border-color: var(--color-offwhite);
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	position: relative;
+	margin-top:14em;
+	font-size:3em;
+	color: var(--color-red);
+}
+.button1:hover{
+   background-color:var(--color-purple2);
+   color: var(--color-offwhite);
+}
+.cards1{
+    background-color:var(--color-purple1);
+    height:var(--card-height);
+    width: 40em;
+}
+.cards2{
+    background-color:var(--color-purple2);
+    height:var(--card-height);
+    width: 40em;
+    margin-left: 37.5em;
+}
+.cards3{
+    background-color:var(--color-purple3);
+    height:var(--card-height);
+    width: 40em;
+}
+.listbox img {
+	width:600px;
+}
+.space{
+	height:var(--spacing);
+}
+.mouse{
+	max-height:400px;
+}
+.mailform{
+	text-align: center;
+}
+input{
+	border:0;
+}
+.searchbar{
+	padding: 1em 19em;
+	border-radius: 0.2em;
+}
+.submit{
+
+	padding: 1em 2em;
+	border-radius: 0.2em;
+}
+.submit:hover{
+	color: var(--color-offwhite);
+	background-color:var(--color-red);
+}
+footer{
+	color: var(--color-offwhite);
+}
+.column1,
+.column2,
+.column3,
+    ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.bor{
+	background-color:transparent;
+	border:0.1em solid white;
+	border-left: none;
+	border-right: none;
+}
+.copyright{
+	text-align: center;
+}
+.ks,
+.ms,
+.hs,
+   a:hover{
+   	text-decoration: underline;
+   	background-color: transparent;
+}
+
+
+
+
