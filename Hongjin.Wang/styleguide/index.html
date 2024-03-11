@@ -1,0 +1,202 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<title>CSS Styleguide</title>
+	<link rel="stylesheet" href="../lib/css/styleguide1.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme1.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+	<div class="container display-flex">
+		<div class="flex-none">
+			<h1>styleguide</h1> 
+		</div>
+		<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
+		<div class="flex-stretch"> </div>
+			<nav class="flex-none nav">
+			<ul class="container display-flex">
+				<li class="flex-stretch "><a href="#table of contents">table of contents</a></li>
+			</ul>
+			</nav>
+	</div>
+	</header>
+	<div class="container" id="table of contents">
+		<div class="card">
+			<h2>Table of contents</h2> 
+			<nav class="nav table-content">
+				<ul>
+				 <li><a href="#typography">Typography</a></li>
+				 <ul>
+				 <li><a href="#headings">Headings</a></li>
+				 <li><a href="#paragraphs">Paragraphs</a></li>
+				 <li><a href="#cards">Color Cards</a></li>
+				 </ul>
+				</ul>
+			</nav>
+			</div>
+		</div>
+	<div class="container" id="typography">
+		<h2>Typography</h2> 
+		<div class="card soft" id="headings">
+			<h2>Fonts:Archivo Black</h2>
+			<h1>Heading 1<h2>
+			<h2>Heading 2<h2>
+			<h3>Heading 3<h3>
+			<h4>Heading 4<h4>
+			<h5>Heading 5<h5>
+		</div>
+		<div class="card soft p1" id="paragraphs">
+			<h3>Introduction</h3>
+			<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Beatae veniam ipsa aut laboriosam, vel ullam eligendi iste, corporis natus, nihil et. Sapiente dignissimos distinctio odio maxime possimus fuga repellat a.</p>
+			<p>Dicta, culpa quaerat sapiente, aliquam ducimus perferendis vel distinctio perspiciatis, nisi veritatis ratione illo repellat? Voluptates ipsam tempore assumenda, recusandae natus, laudantium animi cum optio veniam explicabo totam ipsa dolores?</p>
+			<p>Aliquid, vero reprehenderit optio sed voluptas similique dolores eaque maiores hic vel sunt dolorum labore facere ratione perspiciatis. Vero, consequuntur? Maiores eum laboriosam rerum tenetur, ut laudantium necessitatibus quos eaque.</p>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h2>Color Cards</h2>
+		<div class="grid gap">
+			<div class="col-xs-6 col-md-4">
+				<div class="cards pri1">Primary1</div>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<div class="cards pri2">Primary2</div>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<div class="cards pri3">Primary3</div>
+			</div>
+				<div class="col-xs-6 col-md-4">
+				<div class="cards sec1">secondary1</div>
+			    </div>
+			<div class="col-xs-6 col-md-4">
+			    <div class="cards sec2">secondary2</div>
+			    </div>
+			<div class="col-xs-6 col-md-4">
+			    <div class="cards sec3">secondary3</div>
+			    </div>
+	    </div>
+    </div>
+    <script>
+        const makeTable = (classes='') =>{
+        const head = ['ID','Office','Name','Email','Phone'];
+        const body = [
+        		['522',"Hamilton Cline",'hcline@academy.edu','555-2424'],
+        		['512',"Fred McHale",'sijskjqwe@academy.edu','555-2424'],
+        		['522',"Michael Catanzaro",'mctanzaro@academy.edu','555-2424'],
+        		['514',"Andrea Pimental",'apimentel@academy.edu','555-2424'],
+        		['516',"DC Scarpelli",'dskhgsklnb@academy.edu','555-2424'],
+        	];
+
+        document.write(`
+        <table class = "${classes}">
+        <thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+        <tbody>${body.reduce((r,o,i)=>r+
+            `<tr>${
+            	[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+            }</tr>`,'')
+        }</tbody>
+        </table>
+        `);
+     }
+        </script>
+    <div class="container">
+    	<div class="card soft">
+    	<h2>Contact us</h2>
+    	<script>makeTable("table striped")</script>		
+    	</div>
+   
+
+
+    <h2>Product Overlay</h2>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+				<img src="https://via.placeholder.com/400x400?text=product"alt="">
+				<figcaption>
+					<div class="caption-body">
+						<div>Mice</div>
+						<div>$$$</div>
+					</div>
+				</figcaption>
+			</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+				<img src="https://via.placeholder.com/400x400?text=product"alt="">
+				<figcaption>
+					<div class="caption-body">
+						<div>Keyborads</div>
+						<div>$$$</div>
+					</div>
+				</figcaption>
+			</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+				<img src="https://via.placeholder.com/400x400?text=product"alt="">
+				<figcaption>
+				</figcaption>
+			</figure>
+			</div>
+		</div>
+		</div>
+		 <div class="container">
+		 	<h2>Login</h2>
+		 <div class="card soft">
+		 	<h3>Account Form</h3>
+            	<form>
+            		<div class="form-control">
+            			<label class="form-label">Account</label>
+            			<input type="text" placeholder="" class="form-input">
+            		</div>
+            		<div class="form-control">
+            			<label class="form-label">Password</label>
+            			<input type="text" placeholder="" class="form-input">
+            		</div>
+            		<div class="form-control">
+            		<input type="button" class="form-button" value="Login">
+            	</div>
+		 </div>
+
+		 	<h2>Search bar</h2>
+		 <div class="card soft">
+		 	<div class="form-control">
+            		<form>
+            		   <input type="search" class="hotdog" placeholder="Search">
+            		</form>
+            	</div>
+		 </div>
+
+		 <h2 id="select">Select Number or edition</h2>
+            <div class="card soft">
+            	<div class="form-select">
+            		<select>
+            			<option>1</option>
+            			<option>2</option>
+            			<option>3</option>
+            			<option>4</option>
+            		</select>
+            	</div>
+            </div>
+
+            	<h3>like</h3>
+            	<div class="favorite">
+            		<input type="checkbox" id="heart-example" class="hidden">
+            		<label for="heart-example">&hearts;</label>
+            	</div>
+
+		 </div>
+
+
+
+
+
+
+</body>
+</html>

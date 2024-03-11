@@ -69,7 +69,7 @@ a.ms:hover{
   background-color: var(--color-purple2);
 }
 .containernav{
-	max-width:1800px;
+	max-width:1600px;
 	margin-right:auto;
 	margin-left:auto;
 }
@@ -130,6 +130,7 @@ a.ms:hover{
 .card.hard{
 	border-radius: 0.2em;
 	border:2px solid var(--color-neutral-medium);
+}
 .card.dark{
 	background-color: var(--color-neutral-dark);
 	color:var(--color-neutral-light);
