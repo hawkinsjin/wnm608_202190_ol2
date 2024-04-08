@@ -1,0 +1,32 @@
+[
+	{
+		"name":"hawkins",
+		"type":"designers",
+		"email":"hhhawkins@academyart.edu",
+		"classes":[123,233,533]
+	},
+	{
+		"name":"eric",
+		"type":"teacher",
+		"email":"1233@academyart.edu",
+		"classes":[222,553,553]
+	},
+	{
+		"name":"www",
+		"type":"xxxx",
+		"email":"wslg@academyart.edu",
+		"classes":[341,666,888]
+	},
+	{
+		"name":"kjns",
+		"type":"lkl",
+		"email":"hhhawkins@academyart.edu",
+		"classes":[23,4,2]
+	},
+	{
+		"name":"sjbh",
+		"type":"werr",
+		"email":"sdog@academyart.edu",
+		"classes":[34,64,246]
+	}
+]
