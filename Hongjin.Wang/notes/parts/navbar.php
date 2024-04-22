@@ -6,8 +6,9 @@
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
-					<li><a href="product_list.php">store</a></li>
-					<li><a href="#">Cart</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="product_list.php">Store</a></li>
+					<li><a href="product_cart.php">Cart</a></li>
 					<li><a href="#">Login</a></li>
 				</ul>
 			</nav>

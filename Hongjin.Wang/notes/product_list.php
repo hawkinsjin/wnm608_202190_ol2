@@ -8,15 +8,27 @@
 
 <?php include "parts/navbar.php";?>
 	<div class="container">
-		<div class="card soft">
+
 			<h2>Product List</h2>
-			<ul>
-				<li><a href="product_item.php?id=1">product1</a></l>
-				<li><a href="product_item.php?id=2">product2</a></l>
-				<li><a href="product_item.php?id=3">product3</a></l>
-				<li><a href="product_item.php?id=4">product4</a></l>
-			</ul>
-		</div>
+			
+			<?php
+
+			include_once "functions.php";
+			include_once "parts/templates.php";
+
+			$result = makeQuery(
+				makeConn(),
+				"SELECT *
+				FROM `products`
+				ORDER By `Price` ASC
+				LIMIT 12
+				"
+			);
+
+			echo "<div class='productlist grid gap'>",array_reduce($result ,'productListTemplate'),"</div>";
+
+			?>
+
 	</div>
 </body>
 </html>

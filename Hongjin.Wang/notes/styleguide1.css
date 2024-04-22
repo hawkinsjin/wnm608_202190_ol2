@@ -59,7 +59,7 @@ a:hover{
 }
 
 .container{
-	max-width:800px;
+	max-width:1250px;
 	margin-right:auto;
 	margin-left:auto;
 }
@@ -74,6 +74,7 @@ a:hover{
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
+.flex-column{ flex-direction:column; }
 
 
 .nav ul{
@@ -180,14 +181,9 @@ a:hover{
 	overflow:hidden;
 	position: relative;
 }
-.card:hover{
-	transition:all 0.4s;
-	transform:scale(1.03); 
-}
 .card.soft{
 	border-radius: 0.3em;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
 }
 .card.hard{
 	border-radius: 0.2em;
