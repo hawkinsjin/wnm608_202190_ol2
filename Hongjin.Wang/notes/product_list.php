@@ -1,20 +1,22 @@
+<?php
+include_once "functions.php";
+include_once "parts/templates.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php include "parts/meta.php";?>
+<?php include "parts/meta.php";?>
 	<title>product list</title>	
 </head>
 <body>
-
 <?php include "parts/navbar.php";?>
 	<div class="container">
 
-			<h2>Product List</h2>
-			
-			<?php
-
-			include_once "functions.php";
-			include_once "parts/templates.php";
+	<h2>Product List</h2>
+<?php
+   
 
 			$result = makeQuery(
 				makeConn(),

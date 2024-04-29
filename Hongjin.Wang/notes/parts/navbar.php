@@ -1,3 +1,11 @@
+<?php
+
+include_once"../notes/functions.php";
+include_once"meta.php";
+
+?>
+
+
 <header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
@@ -8,8 +16,12 @@
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="product_list.php">Store</a></li>
-					<li><a href="product_cart.php">Cart</a></li>
 					<li><a href="#">Login</a></li>
+					<li><a href="product_cart.php">
+						<span>Cart</span>
+						<span class="badge"><?= makeCartBadge();?></span>
+					</a></li>
+				
 				</ul>
 			</nav>
 		</div>

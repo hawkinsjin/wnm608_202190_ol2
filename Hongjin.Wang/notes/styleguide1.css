@@ -318,6 +318,11 @@ a:hover{
   cursor: pointer;
   text-align: center;
 }
+
+.form-button.inline {
+	width:initial;
+}
+
 .form-button:hover{
   text-decoration: none;						
 }
@@ -384,7 +389,4 @@ a:hover{
 .toggle input:checked + label::after{
 	transform: translateX(1em);
 }
-
-
-
 

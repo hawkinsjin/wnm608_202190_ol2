@@ -1,3 +1,7 @@
+<?php 
+include_once "functions.php";
+resetCart();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +10,7 @@
 	<?php include "parts/meta.php";?>
 </head>
 <body>
-
-<?php include "parts/navbar.php";?>
-
+	<?php include "parts/navbar.php";?>
 	<div class="container">
 		<div class="card soft">
 			<h2>Thank you for your purachse</h2>
