@@ -1,5 +1,6 @@
-<? php include "/notes/parts/templates.php";?>
-
+<?php 
+ include "notes/parts/templates.php";
+ include "notes/functions.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,19 +62,15 @@
     </div>
 </div>
 	<div class="container">
-	<div class="card soft">
-	<h2> Latest mouse </h2>
+
+		<h2> Latest mouse </h2>
         <?php
       	recommendedCategory("mouse");?>
       	<h2> Latest Keyboards </h2>
-      	<?php
-      	recommendedCategory("Keyboard");?>
-    </div>
+        <?php 
+      	recommendedCategory("Keyboard");
+        ?>
 	</div>
-
-
-
-
 
 
 <script src="style.js"></script>

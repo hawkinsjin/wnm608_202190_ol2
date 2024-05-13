@@ -91,9 +91,9 @@ HDFSFH;
 
 $output = $id == "new" ? $form :
 "<div class='grid gap'>
- <div class='col-xs-12 col-md-5'>$display</div>
- <div class='col-xs-12 col-md-7'>$form</div>
- </div>
+ <div class='col-xs-12 col-md-5'><div class='card soft'>$display</div></div>
+ <div class='col-xs-12 col-md-7'><div class='card soft'>$form</div></div>
+ <div>
 ";
 
 $delete = $id == "new" ? "" : "<a href = '{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";

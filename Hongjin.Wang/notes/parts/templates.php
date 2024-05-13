@@ -1,14 +1,14 @@
 <?php
 function productListTemplate($r,$o){
 	return $r.<<<HTML
-	<a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
+	<a class="col-xs-12 col-md-4" href="../notes/product_item.php?id=$o->id">
 		 <figure class="figure product display-flex flex-column">
 		 <div class="flex-stretch">
 		 <img src="../notes/images/$o->Thumbnail" alt="">
 		 </div>
-		 <figcaption class="flex-none">
+		 <figcaption>
 			 <div>$o->name</div>
-			 <div>&dollar;$o->Price</div>
+			 <div class="price-title">&dollar;$o->Price</div>
 		 </figcaption>
 	 </figure>
 	 </a>
@@ -86,6 +86,22 @@ return <<<HTML
 HTML;
 }
 
+
+function recommendedProducts($a){
+$products = array_reduce($a,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+
+function recommendedCategory($cat,$limit=3) {
+	$result = makeQuery(makeConn(), "SELECT * FROM `products`WHERE`category`='$cat'ORDER BY `Price` DESC LIMIT 3");
+      	recommendedProducts($result);
+}
+function recommendedSimillar($cat,$id=0,$limit=3) {
+	$result = makeQuery(makeConn(), "SELECT * FROM `products`WHERE`category`='$cat' AND `id`<>$id ORDER BY rand()  LIMIT $limit");
+      	recommendedProducts($result);
+}
 
 
 

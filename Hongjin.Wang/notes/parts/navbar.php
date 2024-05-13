@@ -14,7 +14,7 @@ include_once"meta.php";
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="../landingpage.php">Home</a></li>
 					<li><a href="product_list.php">Store</a></li>
 					<li><a href="#">Login</a></li>
 					<li><a href="product_cart.php">

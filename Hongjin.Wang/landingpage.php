@@ -1,5 +1,6 @@
-<? php include "/notes/parts/templates.php";?>
-
+<?php 
+ include "notes/parts/templates.php";
+ include "notes/functions.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,23 +15,23 @@
 
 <body>
 	
-<div class="navbar ">
-	<div class="container display-flex">
+<div class="navbar">
+	<div class="container1 display-flex">
 		<div class="flex-none">
-			<h1>Gaming Peripherals Store</h1> 
+			<h1>GAME FORCE</h1> 
 		</div>
 		<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
 		<div class="flex-stretch"> </div>
-		<nav class="nav nav-pills" id="navigations">
+		<nav class="nav nav-pills flex-none" id="navigations">
         	<ul>
-        		<li><a href="#">Home</a></li>
-        		<li><a href="#">Store</a></li>
-        		<li><a href="#">Cart</a></li>
+        		<li><a href="http://interactive-all.com/landingpage.php">Home</a></li>
+        		<li><a href="notes/productlist.php">Store</a></li>
+        		<li><a href="http://interactive-all.com/notes/product_cart.php">Cart</a></li>
         		<li><a href="#">Log in</a></li>
         	</ul>
         </nav>
 	</div>
-	
+	</div>
 </div >
 <div class="card soft display-flex">
 	<div class ="box">
@@ -55,52 +56,53 @@
 	<div class="view1">
 		<h1>GAMING FORCE</h1>
 	<div class="form-control">
-	  <a href="#">
-     <input type="button" class="form-button" value="FOR WIN JUST NOW!">
-    </div>
-    </div>
+	 <a href="notes/productlist.php">
+     <input type="button" class="form-button" value="FOR WIN RIGHT NOW!">
+      </a>
+    </div>   
 </div>
+</div>
+
 	<div class="container">
-	<div class="card soft">
-	<h2> Latest mouse </h2>
+        <div class="maintitle">
+		<h2> Latest Mouse </h2>
+	    </div>
         <?php
       	recommendedCategory("mouse");?>
+               <div class="maintitle">
       	<h2> Latest Keyboards </h2>
-      	<?php
-      	recommendedCategory("Keyboard");?>
-    </div>
+        </div>
+        <?php 
+      	recommendedCategory("Keyboard");
+        ?>
 	</div>
 
-
-
-
-
-
-<script src="style.js"></script>
 <footer>
-	<nav class="display-flex flex-justify-evenly bor">
+	<div class="bor">
+	<nav class="display-flex flex-justify-evenly">
 	<div class="column1">
 		<h3>Explore</h3>
 		<ul>
-		    <li><a href="#">Apps</a></li>
-		    <li><a href="#">Blog</a></li>
+		    <li><a href="#"><h3>Apps</h3></a></li>
+		    <li><a href="#"><h3>Blog</h3></a></li>
 		</ul>
 	</div>
 	<div class="column2">
 		<h3>Community</h3>
 		<ul>
-		    <li><a href="#">Online communities</a></li>
-		    <li><a href="#">Partnerships</a></li>
+		    <li><a href="#"><h3>Online communities</h3></a></li>
+		    <li><a href="#"><h3>Partnerships</h3></a></li>
 		</ul>
 	</div>
 		<div class="column3">
 		<h3>Download</h3>
 		<ul>
-		    <li><a href="#">Mac</a></li>
-		    <li><a href="#">Windows</a></li>
+		    <li><a href="#"><h3>Mac</h3></a></li>
+		    <li><a href="#"><h3>Windows</h3></a></li>
 		</ul>
 	</div>
     </nav>
+	</div>
     <div class="copyright">
     	<p>CopyRight@Hongjin Wang</p>
     </div>
