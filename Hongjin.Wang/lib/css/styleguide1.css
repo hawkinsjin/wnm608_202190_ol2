@@ -160,6 +160,7 @@ a:hover{
 	background-color: var(--color-primaryR1);
 	color:var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 0;
 }
 
  .navbar h1{
@@ -202,6 +203,12 @@ a:hover{
 .card.flat{
   padding:0;
 }
+[class*='col-']>.card {
+	height:100%;
+	margin:0;
+}
+
+
 .cards.pri1{
 	background-color: var(--color-primaryR1);
 	color: var(--color-white);
@@ -256,6 +263,9 @@ a:hover{
 	overflow:hidden;
 	position: relative;
 }
+
+
+
 
 .table {
 	width:100%;

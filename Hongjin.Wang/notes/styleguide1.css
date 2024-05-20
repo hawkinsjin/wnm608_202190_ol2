@@ -75,6 +75,7 @@ a:hover{
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 .flex-column{ flex-direction:column; }
+.flex-wrap{ flex-wrap:wrap; }
 
 
 .nav ul{
@@ -161,6 +162,7 @@ a:hover{
 	background-color: var(--color-primaryR1);
 	color:var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
 
  .navbar h1{
@@ -198,6 +200,10 @@ a:hover{
 }
 .card.flat{
   padding:0;
+}
+[class*='col-']>.card{
+	height:100%;
+	margin:0;
 }
 .cards.pri1{
 	background-color: var(--color-primaryR1);
@@ -291,7 +297,7 @@ a:hover{
 .form-item{
 	display:inline-block;
 	background-color:transparent;
-  border-width: 0;
+  border-width:0;
   font:inherit;
   -webkit-appearance:none;
   color: inherit;
@@ -299,6 +305,7 @@ a:hover{
   outline:0;
 }
 .form-input {
+	border-color: transparent;
   border-bottom: 1px solid var(--color-neutral-light);
   padding:0.5em 1em;
 }
@@ -312,11 +319,11 @@ a:hover{
 	width:100%;
 }
 .form-button {
+	text-align: center;
 	background-color: var(--color-neutral-light);
 	padding:0.5em 1em;
   border-radius: 0.2em;
   cursor: pointer;
-  text-align: center;
 }
 
 .form-button.inline {
