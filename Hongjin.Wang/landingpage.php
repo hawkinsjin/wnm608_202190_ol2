@@ -62,6 +62,8 @@
     </div>   
 </div>
 </div>
+     <div class="view-window"style="background-image: url('notes/images/window.jpg');width: 99%;">
+     </div>
 
 	<div class="container">
         <div class="maintitle">

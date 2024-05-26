@@ -85,7 +85,8 @@ a:hover{
 	padding-left: 0;
 }
 .nav a:hover{
-	background-color: var(--color-main-medium);
+	border-radius:2em;
+	background-color: var(--color-black);
   color: var(--color-white);
   text-decoration: none;
 }
@@ -193,6 +194,10 @@ a:hover{
 }
 .card.dark{
 	background-color: var(--color-neutral-dark);
+	color:var(--color-neutral-light);
+}
+.card.red{
+	background-color: var(--color-primaryR1);
 	color:var(--color-neutral-light);
 }
 .card.medium{
@@ -319,8 +324,9 @@ a:hover{
 	width:100%;
 }
 .form-button {
+	color: var(--color-white);
 	text-align: center;
-	background-color: var(--color-neutral-light);
+	background-color: var(--color-black);
 	padding:0.5em 1em;
   border-radius: 0.2em;
   cursor: pointer;
@@ -331,11 +337,13 @@ a:hover{
 }
 
 .form-button:hover{
+	background-color: var(--color-primaryY3);
+	color: var(--color-black);
   text-decoration: none;						
 }
 .form-button:active{
 	background-color: var(--color-primaryY3);
-	color: var(--color-white);
+	color: var(--color-black);
 }
 
 .hotdog{

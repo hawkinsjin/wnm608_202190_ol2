@@ -25,9 +25,8 @@
 	height: 70vh;
 	position: relative;
 	overflow:hidden;
-	width:100vw;
 	background-repeat:no-repeat;
-	background-position: center;
+	background-position: initial;
 	background-attachment: fixed;
 }
 .keyview{
